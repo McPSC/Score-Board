@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados em Tempo Real</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        iframe {
+            width: 90%;
+            height: 400px;
+            border: none;
+            margin-bottom: 20px;
+        }
+    </style>
+    <script>
+        function refreshTables() {
+            document.getElementById('rondas').src += '';
+            document.getElementById('ordenar').src += '';
+        }
+        setInterval(refreshTables, 30000); // Atualiza a cada 30 segundos
+    </script>
+</head>
+<body>
+    <h1>Dados em Tempo Real</h1>
+    <h2>Rondas Individuais</h2>
+    <iframe id="rondas" src="https://docs.google.com/spreadsheets/d/e/https://docs.google.com/spreadsheets/d/e/2PACX-1vQMjKns0sk7qQwp4uJDHeDR7AzwPraE5p1MtsJaT4wxqVRUuHDRcmOO3ox_uTpXiNTr3m2OvNGlDGCc/pubhtml?gid=227561313&single=true/pubhtml"></iframe>
+
+    <h2>Ordenar</h2>
+    <iframe id="ordenar" src="hhttps://docs.google.com/spreadsheets/d/e/2PACX-1vS25tOQmVuBkbEvslk63j9WmQ-1go3WEuqVf1w6yKXNHbZK4FEk1GhiazWKMvkHx0UsFjtcqKdf2IIb/pubhtml?gid=1404598159&single=true"></iframe>
+</body>
+</html>
